@@ -1,7 +1,7 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL STYLES */
-header{
-    height: 5rem;
+header .container-md{
+    background-color: red !important;
 }
 
 
@@ -33,3 +33,8 @@ GENERAL STYLE */
 
 /* *-------------------------------------------------------------------
 SPECIFIC STYLES */
+
+/* * HEADER */
+header{
+    background-color: var(--header-bg-color);
+}
