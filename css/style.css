@@ -5,6 +5,10 @@ header nav{
     background-color: red !important;
 }
 
+#jumbodron [class*='col']{
+    background-color: blue;
+}
+
 
 
 
@@ -39,4 +43,13 @@ SPECIFIC STYLES */
 /* * HEADER */
 header{
     background-color: var(--header-bg-color);
+}
+
+
+
+/* * MAIN */
+
+/* ? JUMBODRON */
+#jumbodron{
+    background-color: var(--jumbodron-bg-color);
 }
