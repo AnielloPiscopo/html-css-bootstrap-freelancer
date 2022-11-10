@@ -18,6 +18,7 @@ GENERAL STYLE */
 /* * ROOT */
 :root{
     --header-bg-color: #2c3e50;
+    --jumbodron-bg-color: #1abc9c;
 }
 
 
