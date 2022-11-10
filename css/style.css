@@ -1,6 +1,8 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL STYLES */
-
+header{
+    height: 5rem;
+}
 
 
 
@@ -13,6 +15,9 @@ MOMENTANEAL STYLES */
 GENERAL STYLE */
 
 /* * ROOT */
+:root{
+    --header-bg-color: #2c3e50;
+}
 
 
 
