@@ -5,9 +5,20 @@ header nav{
     background-color: red !important;
 }
 
-#jumbodron [class*='col']{
+#jumbodron [class*='col'],
+#about [class*='col']{
     background-color: blue;
 }
+
+#contact [class*='col'],
+#portfolio [class*='col']{
+    background-color: blueviolet;
+}
+
+footer [class*='col']{
+    background-color: aqua;
+}
+
 
 
 
@@ -23,6 +34,7 @@ GENERAL STYLE */
 :root{
     --header-bg-color: #2c3e50;
     --jumbodron-bg-color: #1abc9c;
+    --footer-utilities-bg-color:#3a546d;
 }
 
 
@@ -32,6 +44,11 @@ GENERAL STYLE */
 
 
 /* * CLASSES */
+
+/* ? COLORS */
+.bg-color-green{
+    background-color: var(--jumbodron-bg-color);
+}
 
 
 
@@ -49,7 +66,13 @@ header{
 
 /* * MAIN */
 
-/* ? JUMBODRON */
-#jumbodron{
-    background-color: var(--jumbodron-bg-color);
+
+
+/* * FOOTER */
+#utilities{
+    background-color: var(--footer-utilities-bg-color);
+}
+
+#copyright{
+    background-color: var(--header-bg-color);
 }
