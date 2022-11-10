@@ -1,6 +1,7 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL STYLES */
-header .container-md{
+header .logo-container,
+header nav{
     background-color: red !important;
 }
 
