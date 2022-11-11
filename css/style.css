@@ -1,7 +1,7 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL STYLES */
 header .logo-container,
-header nav{
+header ul{
     background-color: red !important;
 }
 
