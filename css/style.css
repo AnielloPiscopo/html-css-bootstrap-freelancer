@@ -1,9 +1,5 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL STYLES */
-header .logo-container,
-header ul{
-    background-color: red !important;
-}
 
 #jumbodron [class*='col'],
 #about [class*='col']{
@@ -35,6 +31,8 @@ GENERAL STYLE */
     --header-bg-color: #2c3e50;
     --jumbodron-bg-color: #1abc9c;
     --footer-utilities-bg-color:#3a546d;
+    --secondary-text-color: white;
+    --main-text-color:black;
 }
 
 
@@ -46,7 +44,7 @@ GENERAL STYLE */
 /* * CLASSES */
 
 /* ? COLORS */
-.bg-color-green{
+.my-bg-color-green{
     background-color: var(--jumbodron-bg-color);
 }
 
@@ -59,12 +57,30 @@ SPECIFIC STYLES */
 
 /* * HEADER */
 header{
+    color: var(--secondary-text-color);
     background-color: var(--header-bg-color);
 }
 
+header nav .my-nav-link,
+header a{
+    color: var(--secondary-text-color);
+}
+
+header nav button span{
+    color: white;
+}
 
 
 /* * MAIN */
+
+/* ? JUMBOTRON */
+#jumbotron{
+    color: var(--secondary-text-color);
+}
+
+#jumbotron .my-title{
+    font-size: 2.5rem;
+}
 
 
 
@@ -75,4 +91,54 @@ header{
 
 #copyright{
     background-color: var(--header-bg-color);
+}
+
+
+
+
+
+
+
+
+
+
+/* *------------------------------------------------------------------------------------------------------
+RESPONSIVENESS */
+
+/* * MD */
+@media screen and (min-width:768px){
+    /* * GENERAL STYLES */
+
+
+
+    /* * SPECIFIC STYLES */
+
+    /* ? HEADER */
+    header .my-logo{
+        font-size: 1.7rem !important;
+    }
+
+
+    /* ? MAIN */
+    #jumbotron .my-title{
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
+/* * LG */
+@media screen and (min-width:992px){
+    /* * GENERAL STYLES */
+
+
+
+    /* * SPECIFIC STYLES */
+    
+    /* ? MAIN */
+    #jumbotron .my-title{
+        font-size: 4rem;
+    }
 }
