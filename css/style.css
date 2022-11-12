@@ -72,6 +72,15 @@ header nav button span{
 
 
 /* * MAIN */
+main .my-decoration-element .icon{
+    font-size: 1.7rem;
+}
+
+main .my-decoration-element hr{
+    height: 0.3rem;
+    opacity: 100%;
+    background-color: var(--secondary-text-color);
+}
 
 /* ? JUMBOTRON */
 #jumbotron{
@@ -81,7 +90,6 @@ header nav button span{
 #jumbotron .my-title{
     font-size: 2.5rem;
 }
-
 
 
 /* * FOOTER */
@@ -115,30 +123,16 @@ RESPONSIVENESS */
 
     /* ? HEADER */
     header .my-logo{
-        font-size: 1.7rem !important;
+        font-size: 1.7rem;
     }
 
 
-    /* ? MAIN */
-    #jumbotron .my-title{
-        font-size: 3rem;
-    }
-}
-
-
-
-
-
-/* * LG */
-@media screen and (min-width:992px){
-    /* * GENERAL STYLES */
-
-
-
-    /* * SPECIFIC STYLES */
-    
     /* ? MAIN */
     #jumbotron .my-title{
         font-size: 4rem;
     }
+
+    #jumbotron .my-job{
+        font-size: 1.5rem;
+    }    
 }
