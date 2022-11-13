@@ -1,17 +1,3 @@
-/* !-------------------------------------------------------------------
-MOMENTANEAL STYLES */
-footer [class*='col']{
-    background-color: aqua;
-}
-
-
-
-
-
-
-
-
-
 /* *-------------------------------------------------------------------
 GENERAL STYLE */
 
@@ -42,23 +28,6 @@ body{
 }
 
 
-/* ? OTHER */
-.my-btn{
-    color: var(--secondary-text-color);
-    border-color: var(--jumbotron-bg-color);
-    background-color: var(--jumbotron-bg-color);
-}
-
-.my-btn:hover{
-    background-color: var(--secondary-text-color);
-    color: var(--jumbotron-bg-color);
-}
-
-.my-bg-color-green .my-btn{
-    border-color: var(--secondary-text-color);
-}
-
-
 /* ? COMBINATIONS */
 .my-btn:focus,
 input:focus,
@@ -80,6 +49,10 @@ header{
     background-color: var(--header-bg-color);
 }
 
+header .my-logo:hover{
+    color: var(--secondary-text-color);
+}
+
 header nav .my-nav-link,
 header a{
     color: var(--secondary-text-color);
@@ -97,9 +70,33 @@ main .my-decoration-element hr{
     opacity: 100%;
 }
 
+main .my-btn{
+    color: var(--secondary-text-color);
+    border-color: var(--jumbotron-bg-color);
+    background-color: var(--jumbotron-bg-color);
+}
+
+main .my-btn:hover{
+    background-color: var(--secondary-text-color);
+    color: var(--jumbotron-bg-color);
+}
+
+main .my-bg-color-green .my-btn{
+    border-color: var(--secondary-text-color);
+}
+
 /* ? JUMBOTRON SECTION */
 #jumbotron .my-title{
     font-size: 2.5rem;
+}
+
+#jumbotron .my-job{
+    cursor: pointer;
+    transition: all 2s;
+}
+
+#jumbotron .my-job:hover{
+    font-style: italic;
 }
 
 
@@ -115,12 +112,40 @@ main .my-decoration-element hr{
 
 
 /* * FOOTER */
+footer{
+    color: var(--secondary-text-color);
+}
+
+/* ? UTILITIES SECTION */
 #utilities{
     background-color: var(--footer-utilities-bg-color);
 }
 
+footer .my-icons-container a{
+    color: var(--secondary-text-color);
+}
+
+
+#utilities .my-icons-container a:hover{
+    color: var(--jumbotron-bg-color);
+    border-color: var(--jumbotron-bg-color);
+}
+
+#utilities section:last-of-type .my-text-content>span{
+    color: var(--jumbotron-bg-color);
+    cursor: pointer;
+}
+
+#utilities section:last-of-type .my-text-content>span:hover{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* ? COPYRIGHT SECTION */
 #copyright{
     background-color: var(--header-bg-color);
+    font-size: 0.9rem;
 }
 
 
