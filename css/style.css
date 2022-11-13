@@ -1,13 +1,7 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL STYLES */
 
-#jumbodron [class*='col'],
-#about [class*='col']{
-    background-color: blue;
-}
-
-#contact [class*='col'],
-#portfolio [class*='col']{
+#contact [class*='col']{
     background-color: blueviolet;
 }
 
@@ -29,15 +23,18 @@ GENERAL STYLE */
 /* * ROOT */
 :root{
     --header-bg-color: #2c3e50;
-    --jumbodron-bg-color: #1abc9c;
+    --jumbotron-bg-color: #1abc9c;
     --footer-utilities-bg-color:#3a546d;
     --secondary-text-color: white;
-    --main-text-color:black;
+    --main-text-color:#333333;
 }
 
 
 
 /* * TAG HTML */
+body{
+    color: var(--main-text-color);
+}
 
 
 
@@ -45,10 +42,27 @@ GENERAL STYLE */
 
 /* ? COLORS */
 .my-bg-color-green{
-    background-color: var(--jumbodron-bg-color);
+    background-color: var(--jumbotron-bg-color);
+    color: var(--secondary-text-color);
 }
 
 
+/* ? OTHER */
+.my-btn:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.my-bg-color-green .my-btn{
+    background-color: var(--jumbotron-bg-color);
+    border-color: var(--secondary-text-color);
+    color: var(--secondary-text-color);
+}
+
+.my-bg-color-green .my-btn:hover{
+    background-color: var(--secondary-text-color);
+    color: var(--jumbotron-bg-color);
+}
 
 
 
@@ -66,30 +80,23 @@ header a{
     color: var(--secondary-text-color);
 }
 
-header nav button span{
-    color: white;
-}
 
 
 /* * MAIN */
-main .my-decoration-element .icon{
+main .my-decoration-element .my-icon{
     font-size: 1.7rem;
 }
 
 main .my-decoration-element hr{
     height: 0.3rem;
     opacity: 100%;
-    background-color: var(--secondary-text-color);
 }
 
-/* ? JUMBOTRON */
-#jumbotron{
-    color: var(--secondary-text-color);
-}
-
+/* ? JUMBOTRON SECTION */
 #jumbotron .my-title{
     font-size: 2.5rem;
 }
+
 
 
 /* * FOOTER */
@@ -116,6 +123,9 @@ RESPONSIVENESS */
 /* * MD */
 @media screen and (min-width:768px){
     /* * GENERAL STYLES */
+    .my-title{
+        font-size: 3rem;
+    }    
 
 
 
@@ -124,6 +134,10 @@ RESPONSIVENESS */
     /* ? HEADER */
     header .my-logo{
         font-size: 1.7rem;
+    }
+
+    header .my-nav-link{
+        text-transform: uppercase;
     }
 
 
