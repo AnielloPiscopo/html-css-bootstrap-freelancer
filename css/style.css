@@ -44,20 +44,18 @@ body{
 
 /* ? OTHER */
 .my-btn{
-    color: var(--jumbotron-bg-color);
+    color: var(--secondary-text-color);
     border-color: var(--jumbotron-bg-color);
+    background-color: var(--jumbotron-bg-color);
+}
+
+.my-btn:hover{
     background-color: var(--secondary-text-color);
+    color: var(--jumbotron-bg-color);
 }
 
 .my-bg-color-green .my-btn{
-    background-color: var(--jumbotron-bg-color);
     border-color: var(--secondary-text-color);
-    color: var(--secondary-text-color);
-}
-
-.my-bg-color-green .my-btn:hover{
-    background-color: var(--secondary-text-color);
-    color: var(--jumbotron-bg-color);
 }
 
 
