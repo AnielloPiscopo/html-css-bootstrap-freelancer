@@ -58,6 +58,10 @@ header a{
     color: var(--secondary-text-color);
 }
 
+header .my-nav-link:hover{
+    font-style: italic;
+    color: var(--jumbotron-bg-color);
+}
 
 
 /* * MAIN */
@@ -96,7 +100,7 @@ main .my-bg-color-green .my-btn{
 }
 
 #jumbotron .my-job:hover{
-    font-style: italic;
+    text-decoration: underline;
 }
 
 
@@ -178,6 +182,10 @@ RESPONSIVENESS */
 
     header .my-nav-link{
         text-transform: uppercase;
+    }
+
+    header .my-nav-link:hover{
+        font-style: normal;
     }
 
 
