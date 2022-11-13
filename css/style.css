@@ -1,10 +1,5 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL STYLES */
-
-#contact [class*='col']{
-    background-color: blueviolet;
-}
-
 footer [class*='col']{
     background-color: aqua;
 }
@@ -48,9 +43,10 @@ body{
 
 
 /* ? OTHER */
-.my-btn:focus{
-    box-shadow: none !important;
-    outline: none !important;
+.my-btn{
+    color: var(--jumbotron-bg-color);
+    border-color: var(--jumbotron-bg-color);
+    background-color: var(--secondary-text-color);
 }
 
 .my-bg-color-green .my-btn{
@@ -63,6 +59,17 @@ body{
     background-color: var(--secondary-text-color);
     color: var(--jumbotron-bg-color);
 }
+
+
+/* ? COMBINATIONS */
+.my-btn:focus,
+input:focus,
+textarea:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
 
 
 
@@ -95,6 +102,16 @@ main .my-decoration-element hr{
 /* ? JUMBOTRON SECTION */
 #jumbotron .my-title{
     font-size: 2.5rem;
+}
+
+
+/* ? CONTACT SECTION */
+#contact .my-form input,
+#contact .my-form textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
 }
 
 
